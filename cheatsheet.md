@@ -1,12 +1,12 @@
 # TOC
 - [Colors](#Colors)
-- [# S3 ]
-- [# Plots]
-- [# Factors]
-- [# survival analysis]
-- [# create var names dynamically]
-- [# Memory]
-- [# Packages]
+- [S3](#S3)
+- [Plots](#Plots)
+- [Factors](#Factors)
+- [survival analysis](#survival analysis)
+- [create var names dynamically](#create var names dynamically)
+- [Memory](#Memory)
+- [Packages](#Packages)
 
 
 # Colors
