@@ -1,5 +1,4 @@
 # TOC
-- [Colors](#Colors)
 - [S3](#S3)
 - [Plots](#Plots)
 - [Factors](#Factors)
@@ -7,12 +6,6 @@
 - [create var names dynamically](#create-var-names-dynamically)
 - [Memory](#Memory)
 - [Packages](#Packages)
-
-
-# Colors
-* core-blue #1F2E5C
-* core-green #3BBF9E
-* core-pink #E22279
 
 
 # S3 
@@ -34,6 +27,12 @@ put_object(file = "file-name", object = "destination-name", bucket = "bucket pat
 ```
 
 # Plots
+
+## Colors
+
+* core-blue #1F2E5C
+* core-green #3BBF9E
+* core-pink #E22279
 
 ## Missing data plots
 
