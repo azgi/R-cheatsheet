@@ -10,9 +10,9 @@
 
 
 # Colors
-core-blue #1F2E5C
-core-green #3BBF9E
-core-pink #E22279
+* core-blue #1F2E5C
+* core-green #3BBF9E
+* core-pink #E22279
 
 
 # S3 
