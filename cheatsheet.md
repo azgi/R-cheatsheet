@@ -18,6 +18,8 @@ package.skeleton("test9", code_files = "test_funcs.R")
 ```
 roxygenize("test9")
 ```
+```
 build(name_package)
 install(name_package)
 test8::get_date(xfile = "tenant_meta.csv")
+```
