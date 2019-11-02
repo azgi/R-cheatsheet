@@ -4,7 +4,7 @@
 - [Plots](#Plots)
 - [Factors](#Factors)
 - [survival analysis](#survival-analysis)
-- [create var names dynamically](#create var names dynamically)
+- [create var names dynamically](#create-var-names-dynamically)
 - [Memory](#Memory)
 - [Packages](#Packages)
 
