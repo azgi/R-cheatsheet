@@ -1,6 +1,7 @@
 # TOC
 - [S3](#S3)
 - [Plots](#Plots)
+- [Tidyverse](#Tidyverse)
 - [Factors](#Factors)
 - [survival analysis](#survival-analysis)
 - [create var names dynamically](#create-var-names-dynamically)
@@ -117,6 +118,15 @@ seaborn.pairplot(data = xdata, vars = ['month', 'monthPlanType'])
 plt.show()
 ```
 
+# Tidyverse
+
+Find the last of a var value in a group
+
+```
+group_by(group_name) %>% last(var)
+group_by(group_name) %>% first(var)
+
+```
 # Factors
 - fct_reorder(): Reordering a factor by another variable.
 - fct_infreq(): Reordering a factor by the frequency of values.
