@@ -131,6 +131,7 @@ group_by(group_name) %>% first(var)
 Generate A Frequency Table (1-, 2-, Or 3-Way).
 
 ```
+library(janitor)
 tabyl(dat, var1, var2, var3, show_na = TRUE, show_missing_levels = TRUE, ...)
 
 mtcars %>%
