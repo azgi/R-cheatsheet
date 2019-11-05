@@ -127,6 +127,16 @@ group_by(group_name) %>% last(var)
 group_by(group_name) %>% first(var)
 
 ```
+
+Generate A Frequency Table (1-, 2-, Or 3-Way).
+
+```
+tabyl(dat, var1, var2, var3, show_na = TRUE, show_missing_levels = TRUE, ...)
+
+mtcars %>%
+  tabyl(cyl, gear)
+```
+
 # Factors
 - fct_reorder(): Reordering a factor by another variable.
 - fct_infreq(): Reordering a factor by the frequency of values.
