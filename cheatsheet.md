@@ -138,6 +138,14 @@ mtcars %>%
   tabyl(cyl, gear)
 ```
 
+Print percentages in the right format, works in prints. If you add it to your dataset it will change the var from numeric into character.
+
+```
+library(scales)
+percent(0.23)
+ # "23.0%"
+```
+
 # Factors
 - fct_reorder(): Reordering a factor by another variable.
 - fct_infreq(): Reordering a factor by the frequency of values.
