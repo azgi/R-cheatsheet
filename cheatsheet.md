@@ -205,14 +205,13 @@ ls()
 library(devtools)
 library(roxygen2)
 ```
+You should work from the root folder of the package.
 ```
-package.skeleton("test9", code_files = "test_funcs.R")
+devtools::create(pkg_name)
+# package.skeleton("test9", code_files = "test_funcs.R")
 ```
-- Delete the files created in the man folder
-- Delete the NAMESPACE file
-- Update the DESCRIPTION file with the info
 ```
-roxygenize("test9")
+roxygen2::roxygenize(pkg_name)
 ```
 ```
 build(name_package)
