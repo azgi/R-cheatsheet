@@ -210,9 +210,12 @@ You should work from the root folder of the package.
 devtools::create(pkg_name)
 # package.skeleton("test9", code_files = "test_funcs.R")
 ```
+Comment the function codes based on Roxygen standards so that the manuals are created automatically through `roxigenize()`.
+
 ```
 roxygen2::roxygenize(pkg_name)
 ```
+
 ```
 build(name_package)
 install(name_package)
