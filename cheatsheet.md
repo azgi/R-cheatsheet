@@ -4,6 +4,7 @@
 - [Tidyverse](#Tidyverse)
 - [Factors](#Factors)
 - [survival analysis](#survival-analysis)
+- [Fit an exponention distribution](#exponential-distribution-fit)
 - [create var names dynamically](#create-var-names-dynamically)
 - [Memory](#Memory)
 - [Packages](#Packages)
@@ -160,6 +161,29 @@ library(survminer)
 fit <- survfit(Surv(time, status) ~ sex, data = lung)
 ggsurvplot(fit, data = lung)
 ```
+# exponential distribution fit
+ [source](https://stats.stackexchange.com/questions/76994/how-do-i-check-if-my-data-fits-an-exponential-distribution)
+```
+require(vcd)
+require(MASS)
+
+# data generation
+ex <- rexp(10000, rate = 1.85) # generate some exponential distribution
+control <- abs(rnorm(10000)) # generate some other distribution
+
+# estimate the parameters
+fit1 <- fitdistr(ex, "exponential") 
+fit2 <- fitdistr(control, "exponential")
+
+# goodness of fit test
+ks.test(ex, "pexp", fit1$estimate) # p-value > 0.05 -> distribution not refused
+ks.test(control, "pexp", fit2$estimate) #  significant p-value -> distribution refused
+
+# plot a graph
+hist(ex, freq = FALSE, breaks = 100, xlim = c(0, quantile(ex, 0.99)))
+curve(dexp(x, rate = fit1$estimate), from = 0, col = "red", add = TRUE)
+```
+
 
 # create var names dynamically
 
