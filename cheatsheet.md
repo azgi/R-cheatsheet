@@ -8,6 +8,7 @@
 - [create var names dynamically](#create-var-names-dynamically)
 - [Memory](#Memory)
 - [Packages](#Packages)
+- [RMarkdown](#RMarkdown)
 
 
 # S3 
@@ -244,4 +245,10 @@ roxygen2::roxygenize(pkg_name)
 build(name_package)
 install(name_package)
 test8::get_date(xfile = "tenant_meta.csv")
+```
+# RMarkdown
+
+Add an image in rmarkdown with 
+```
+![caption](image path)
 ```
