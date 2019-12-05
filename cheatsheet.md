@@ -120,6 +120,12 @@ seaborn.pairplot(data = xdata, vars = ['month', 'monthPlanType'])
 plt.show()
 ```
 
+## Plot constant lines
+
+```
+geom_hline(yintercept, linetype, color, size)
+geom_vline(xintercept, linetype, color, size)
+```
 # Tidyverse
 
 Find the last of a var value in a group
