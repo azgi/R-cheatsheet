@@ -160,7 +160,19 @@ percent(0.23)
 - fct_relevel(): Changing the order of a factor by hand.
 - fct_lump(): Collapsing the least/most frequent values of a factor into “other”.
 
-# work with column names as strings
+# functions
+
+```
+myfun <- function() list(a = 1, b = 2)
+
+list[a, b] <- myfun()
+a + b
+
+# same
+with(myfun(), a + b)
+```
+
+## work with column names as strings
 ```
 pryr::get("abc")
 ```
