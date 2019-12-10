@@ -11,7 +11,7 @@
 - [RMarkdown](#RMarkdown)
 
 
-# S3 
+# AWS.S3 
 - create a folder
 ```
 put_folder("folder_name", bucket  = "bucket-path")
@@ -160,7 +160,22 @@ percent(0.23)
 - fct_relevel(): Changing the order of a factor by hand.
 - fct_lump(): Collapsing the least/most frequent values of a factor into “other”.
 
+# work with column names as strings
+```
+pryr::get("abc")
+```
 
+```
+eval(parse(text = "x"))
+
+x <- 42
+eval(parse(text = "x"))
+#[1] 42
+
+x <- 42
+deparse(substitute(x))
+#[1] "x"
+```
 # survival analysis
 
 ```
