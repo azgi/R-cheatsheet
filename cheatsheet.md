@@ -160,6 +160,7 @@ percent(0.23)
 - fct_relevel(): Changing the order of a factor by hand.
 - fct_lump(): Collapsing the least/most frequent values of a factor into “other”.
 
+
 # functions
 
 ```
@@ -171,7 +172,15 @@ a + b
 # same
 with(myfun(), a + b)
 ```
+## Split data frame by groups
 
+```
+ir <- iris %>%
+  group_by(Species)
+
+group_split(ir)
+group_keys(ir
+```
 ## work with column names as strings
 ```
 pryr::get("abc")
