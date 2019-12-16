@@ -182,6 +182,12 @@ group_split(ir)
 group_keys(ir
 ```
 ## work with column names as strings
+
+```
+for (col in colnames(combos)) {
+  combos[[col]] <- rlang::syms(combos[[col]])
+}
+```
 ```
 pryr::get("abc")
 ```
