@@ -303,4 +303,4 @@ Add an image in rmarkdown with
 
 reproducible examples
 
-see [https://reprex.tidyverse.org](reprex package)
+see [https://reprex.tidyverse.org](reprexpackage)
