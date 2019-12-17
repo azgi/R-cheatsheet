@@ -300,3 +300,7 @@ Add an image in rmarkdown with
 ```
 ![caption](image path)
 ```
+
+reproducible examples
+
+see [https://reprex.tidyverse.org](reprex package)
