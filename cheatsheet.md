@@ -159,6 +159,7 @@ percent(0.23)
 - fct_infreq(): Reordering a factor by the frequency of values.
 - fct_relevel(): Changing the order of a factor by hand.
 - fct_lump(): Collapsing the least/most frequent values of a factor into “other”.
+- fct_explicit_na(): rename NA cases
 
 
 # functions
