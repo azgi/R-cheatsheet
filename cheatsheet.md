@@ -153,7 +153,11 @@ library(scales)
 percent(0.23)
  # "23.0%"
 ```
-
+```
+starwars %>% select(ends_with("color"))
+starwars %>% select(matches("^[nm]a"))
+starwars %>% select(10, everything())
+```
 # Factors
 - fct_reorder(): Reordering a factor by another variable.
 - fct_infreq(): Reordering a factor by the frequency of values.
