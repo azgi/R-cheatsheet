@@ -126,6 +126,13 @@ plt.show()
 geom_hline(yintercept, linetype, color, size)
 geom_vline(xintercept, linetype, color, size)
 ```
+
+## facets
+change vars in facet dynamically
+```
+facet_wrap(as.formula(paste("~", variable_name)))
+```
+
 # Tidyverse
 
 Find the last of a var value in a group
