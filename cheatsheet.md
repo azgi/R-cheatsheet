@@ -133,6 +133,9 @@ change vars in facet dynamically
 facet_wrap(as.formula(paste("~", variable_name)))
 ```
 
+## automate exploratory plots
+https://aosmith.rbind.io/2018/08/20/automating-exploratory-plots/
+
 # Tidyverse
 
 Find the last of a var value in a group
