@@ -137,6 +137,12 @@ facet_wrap(as.formula(paste("~", variable_name)))
 https://aosmith.rbind.io/2018/08/20/automating-exploratory-plots/
 https://www.brodrigues.co/blog/2017-03-29-make-ggplot2-purrr/
 
+## Labelling the points in ggplot
+```
+p <- ggplot(mtcars, aes(wt, mpg, label = rownames(mtcars)))
+
+p + geom_text()
+```
 # Tidyverse
 
 Find the last of a var value in a group
