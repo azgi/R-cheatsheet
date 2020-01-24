@@ -225,6 +225,15 @@ x <- 42
 deparse(substitute(x))
 #[1] "x"
 ```
+
+## change text to columns in tidyverse
+
+```
+separate()
+extract()
+
+```
+https://tidyr.tidyverse.org/reference/separate.html
 # survival analysis
 
 ```
