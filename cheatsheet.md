@@ -182,6 +182,15 @@ starwars %>% select(10, everything())
 - fct_lump(): Collapsing the least/most frequent values of a factor into “other”.
 - fct_explicit_na(): rename NA cases
 
+# percentages
+
+```
+customers %>% tabyl(cohort_year, conversion_stage) %>% adorn_totals("row") %>%
+  adorn_percentages("row") %>%
+  adorn_pct_formatting(digits = 1) %>%
+  adorn_ns %>%
+  adorn_title
+```
 
 # functions
 
