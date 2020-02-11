@@ -143,6 +143,13 @@ p <- ggplot(mtcars, aes(wt, mpg, label = rownames(mtcars)))
 
 p + geom_text()
 ```
+
+## Add a variable to aes()
+use `aes_string`
+```
+ggplot(week_n_activity, aes_string(x = variable, y =  "n_tenants" , fill = "signupVariation"))+
+    geom_col( position = "dodge")
+```
 # Tidyverse
 
 Find the last of a var value in a group
