@@ -198,7 +198,18 @@ customers %>% tabyl(cohort_year, conversion_stage) %>% adorn_totals("row") %>%
   adorn_ns %>%
   adorn_title
 ```
+#
 
+```
+na_if() to replace specified values with a NA.
+
+coalesce() to replace missing values with a specified value.
+
+tidyr::replace_na() to replace NA with a value.
+
+char_vec <- sample(c("a", "b", "c"), 10, replace = TRUE)
+recode(char_vec, a = "Apple")
+```
 # functions
 
 ```
