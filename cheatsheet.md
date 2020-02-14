@@ -265,6 +265,19 @@ https://tidyr.tidyverse.org/reference/separate.html
 ## reading variable names dynamically in functions
 In order to read functions that get the names of variables as strings and implement dplyr piping commands on them we need to use `quo` and `enquo` as explained in detail[here](https://cran.r-project.org/web/packages/dplyr/vignettes/programming.html).
 
+```
+my_summarise <- function(df, group_var) {
+  group_var <- enquo(group_var)
+  print(group_var)
+
+  df %>%
+    group_by(!! group_var) %>%
+    summarise(a = mean(a))
+}
+
+my_summarise(df, g1)
+```
+
 # survival analysis
 
 ```
