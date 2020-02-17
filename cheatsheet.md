@@ -262,7 +262,9 @@ extract()
 ```
 https://tidyr.tidyverse.org/reference/separate.html
 
-## reading variable names dynamically in functions
+## defusing expressions
+* reading variable names dynamically in functions
+
 In order to read functions that get the names of variables as strings and implement dplyr piping commands on them we need to use `quo` and `enquo` as explained in detail[here](https://cran.r-project.org/web/packages/dplyr/vignettes/programming.html).
 
 ```
