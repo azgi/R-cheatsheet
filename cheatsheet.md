@@ -381,3 +381,10 @@ Add an image in rmarkdown with
 reproducible examples
 
 see [https://reprex.tidyverse.org](reprexpackage)
+
+# Multivariate Analysis
+ How to plot the scatterplot of all vars
+ A good source is https://little-book-of-r-for-multivariate-analysis.readthedocs.io/en/latest/src/multivariateanalysis.html
+```
+scatterplotMatrix(wine[2:6])
+```
