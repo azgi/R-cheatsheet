@@ -86,6 +86,14 @@ ggplot(mtcars) +
 grid.arrange(p1, p2, ncol = 2)
 ```
 
+# Adding customized tick marks to plots
+
+```
+scale_x_continuous(name, breaks, labels, limits, trans)
+scale_y_continuous(name, breaks, labels, limits, trans)
+```
+
+
 ## Bar plots with percentage
 -ref: https://sebastiansauer.github.io/percentage_plot_ggplot2_V2/
 
