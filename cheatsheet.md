@@ -228,8 +228,13 @@ ir <- iris %>%
   group_by(Species)
 
 group_split(ir)
-group_keys(ir
+group_keys(ir)
 ```
+
+```
+data %>% split(.$group_var)%>%
+  imap(function)
+  ```
 ## work with column names as strings
 
 ```
