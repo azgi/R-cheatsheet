@@ -415,3 +415,21 @@ BDEsizeApp()
 Library(pwr)
 pwr.2p2n.test
 power.prop.test
+```
+
+```
+power.fisher.test
+#From statmod v1.4.34
+#by Gordon Smyth
+```
+[DunnettTests]
+```
+library("DunnettTests")
+
+```
+
+Logistic regression
+```
+library(powerMediation)
+SSizeLogisticBin()
+```
