@@ -422,7 +422,8 @@ power.fisher.test
 #From statmod v1.4.34
 #by Gordon Smyth
 ```
-[DunnettTests]
+[DunnettTests](https://towardsdatascience.com/top-5-mistakes-with-statistics-in-a-b-testing-9b121ea1827c)
+Wikipedia has a good explanation as well.
 ```
 library("DunnettTests")
 
