@@ -401,3 +401,17 @@ see [https://reprex.tidyverse.org](reprexpackage)
 ```
 scatterplotMatrix(wine[2:6])
 ```
+
+# Sample size
+
+- [Factorial design](https://socialresearchmethods.net/kb/factorial-design-variations/)
+- [help ](https://rdrr.io/cran/BDEsize/man/Size.Full.html)
+```
+library(BDEsize)
+BDEsizeApp()
+```
+
+```
+Library(pwr)
+pwr.2p2n.test
+power.prop.test
