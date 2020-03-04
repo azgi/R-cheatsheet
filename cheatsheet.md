@@ -434,3 +434,26 @@ Logistic regression
 library(powerMediation)
 SSizeLogisticBin()
 ```
+
+# Drake
+use `format = "fst"` to expedite the data upload.
+```
+library(drake)
+n <- 1e8 # Each target is 1.6 GB in memory.
+plan <- drake_plan(
+  data_fst = target(
+    data.frame(x = runif(n), y = runif(n)),
+    format = "fst"
+  ),
+  data_old = data.frame(x = runif(n), y = runif(n))
+)
+make(plan)
+#> target data_fst
+#> target data_old
+build_times(type = "build")
+#> # A tibble: 2 x 4
+#>   target   elapsed              user                 system    
+#>   <chr>    <Duration>           <Duration>           <Duration>
+#> 1 data_fst 13.93s               37.562s              7.954s    
+#> 2 data_old 184s (~3.07 minutes) 177s (~2.95 minutes) 4.157s
+```
