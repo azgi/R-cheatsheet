@@ -36,9 +36,17 @@ put_object(file = "file-name", object = "destination-name", bucket = "bucket pat
 [source](https://www.r-graph-gallery.com/ggplot2-color.html)
 
 ```
+
+# to define color ranges
 xplot +  scale_color_brewer(palette = "Spectral")
 
-xplot + scale_color_paletteer_d(ggsci, nrc_npg)
+xplot + scale_color_paletteer_d(ggsci, nrc_npg) 
+
+# to get the color names
+colors()
+
+# to get a color by its number 
+colors()[number]
 ```
 
 * core-blue #1F2E5C
