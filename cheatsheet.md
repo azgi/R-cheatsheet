@@ -33,6 +33,14 @@ put_object(file = "file-name", object = "destination-name", bucket = "bucket pat
 
 ## Colors
 
+[source](https://www.r-graph-gallery.com/ggplot2-color.html)
+
+```
+xplot +  scale_color_brewer(palette = "Spectral")
+
+xplot + scale_color_paletteer_d(ggsci, nrc_npg)
+```
+
 * core-blue #1F2E5C
 * core-green #3BBF9E
 * core-pink #E22279
