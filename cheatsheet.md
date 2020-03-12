@@ -316,6 +316,12 @@ library(survminer)
 fit <- survfit(Surv(time, status) ~ sex, data = lung)
 ggsurvplot(fit, data = lung)
 ```
+
+```
+library(flexsurv)
+Hexp() cumulative hazard rate
+
+````
 # exponential distribution fit
  [source](https://stats.stackexchange.com/questions/76994/how-do-i-check-if-my-data-fits-an-exponential-distribution)
 ```
