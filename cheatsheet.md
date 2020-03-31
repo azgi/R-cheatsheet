@@ -479,3 +479,33 @@ build_times(type = "build")
 #> 1 data_fst 13.93s               37.562s              7.954s    
 #> 2 data_old 184s (~3.07 minutes) 177s (~2.95 minutes) 4.157s
 ```
+
+# keep your code tidy
+[source](https://edwinth.github.io/ADSwR/code-that-fails.html)
+
+```
+df_has_cols <- function(x, cols) {
+  parent_frame <- sys.parent()
+  calling_function <- sys.call(parent_frame)[[1]]
+  stopifnot(is.data.frame(x))
+  if(!all(cols %in% colnames(x))) {
+    not_present <- setdiff(cols, colnames(x))
+    stop(paste(not_present, collapse = ", "), " missing from the data frame in function ", calling_function)
+  }
+}
+```
+
+```
+add_log_target <- function(x) {
+  df_has_cols(x, "target")
+  x$target_log <- log(x$target)
+  x
+}
+add_log_target(mtcars)
+```
+packages to look into
+
+```
+library(recipes)
+library(validate)
+```
