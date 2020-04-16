@@ -32,7 +32,7 @@ put_object(file = "file-name", object = "destination-name", bucket = "bucket pat
 # Plots
 
 ## Label the bar plots
-
+source https://ggplot2.tidyverse.org/reference/geom_text.html
 ```
 ggplot(data = df, aes(x, y, group = grp)) +
  geom_col(aes(fill = grp)) +
