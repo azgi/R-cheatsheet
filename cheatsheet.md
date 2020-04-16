@@ -31,6 +31,14 @@ put_object(file = "file-name", object = "destination-name", bucket = "bucket pat
 
 # Plots
 
+## Label the bar plots
+
+```
+ggplot(data = df, aes(x, y, group = grp)) +
+ geom_col(aes(fill = grp)) +
+ geom_text(aes(label = y), position = position_stack(vjust = 0.5))
+```
+
 ## Colors
 
 [source](https://www.r-graph-gallery.com/ggplot2-color.html)
