@@ -182,6 +182,7 @@ use `aes_string`
 ggplot(week_n_activity, aes_string(x = variable, y =  "n_tenants" , fill = "signupVariation"))+
     geom_col( position = "dodge")
 ```
+
 # Tidyverse
 
 Find the last of a var value in a group
@@ -415,6 +416,9 @@ install(name_package)
 test8::get_date(xfile = "tenant_meta.csv")
 ```
 # RMarkdown
+
+# formatting tables
+source : http://www.danieldsjoberg.com/gtsummary/
 
 Add an image in rmarkdown with 
 ```
