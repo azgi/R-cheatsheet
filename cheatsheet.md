@@ -222,7 +222,7 @@ starwars %>% select(10, everything())
 - fct_explicit_na(): rename NA cases
 
 # percentages
-
+ source https://cran.r-project.org/web/packages/janitor/vignettes/tabyls.html
 ```
 customers %>% tabyl(cohort_year, conversion_stage) %>% adorn_totals("row") %>%
   adorn_percentages("row") %>%
