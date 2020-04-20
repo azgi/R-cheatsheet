@@ -417,7 +417,7 @@ test8::get_date(xfile = "tenant_meta.csv")
 ```
 # RMarkdown
 
-# formatting tables
+## formatting tables
 source : http://www.danieldsjoberg.com/gtsummary/
 
 Add an image in rmarkdown with 
@@ -490,6 +490,15 @@ build_times(type = "build")
 #>   <chr>    <Duration>           <Duration>           <Duration>
 #> 1 data_fst 13.93s               37.562s              7.954s    
 #> 2 data_old 184s (~3.07 minutes) 177s (~2.95 minutes) 4.157s
+```
+## DRAKE and Reports
+```
+  report = rmarkdown::render(
+    knitr_in("report.Rmd"),
+    output_file = file_out("report.html"),
+    quiet = TRUE
+  )
+
 ```
 
 # keep your code tidy
