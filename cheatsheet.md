@@ -185,6 +185,12 @@ ggplot(week_n_activity, aes_string(x = variable, y =  "n_tenants" , fill = "sign
 
 # Tidyverse
 
+## window functions in dplyr
+
+source : https://dplyr.tidyverse.org/articles/window-functions.html
+
+Helps with getting quantiles - ntiles tidy way.
+
 Find the last of a var value in a group
 
 ```
