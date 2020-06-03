@@ -274,6 +274,15 @@ group_keys(ir)
 data %>% split(.$group_var)%>%
   imap(function)
   ```
+  
+## create interval factors based on ntiles
+
+https://rdrr.io/cran/gtools/man/quantcut.html
+
+```
+quantcut(rnorm(100), q = 4)
+```
+
 ## work with column names as strings
 
 ```
