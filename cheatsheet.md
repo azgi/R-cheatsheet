@@ -345,7 +345,20 @@ ggsurvplot(fit, data = lung)
 library(flexsurv)
 Hexp() cumulative hazard rate
 
-````
+```
+
+# get the cox.ph coefficient plots in R
+
+https://www.rdocumentation.org/packages/survminer/versions/0.4.6/topics/ggforest
+
+```
+# Fit a Cox proportional hazards model
+fit.coxph <- coxph(surv_object ~ rx + resid.ds + age_group + ecog.ps, 
+                   data = ovarian)
+ggforest(fit.coxph, data = ovarian)
+```
+
+
 # exponential distribution fit
  [source](https://stats.stackexchange.com/questions/76994/how-do-i-check-if-my-data-fits-an-exponential-distribution)
 ```
