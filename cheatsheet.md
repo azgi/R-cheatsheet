@@ -9,6 +9,7 @@
 - [Memory](#Memory)
 - [Packages](#Packages)
 - [RMarkdown](#RMarkdown)
+- [File System Operations](#File-System-Operations)
 
 
 # AWS.S3 
