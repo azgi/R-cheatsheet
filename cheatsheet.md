@@ -566,3 +566,7 @@ library(validate)
 library(fs)
 ```
 
+# get sample dataset
+```
+data(package = .packages(all.available = TRUE))
+```
