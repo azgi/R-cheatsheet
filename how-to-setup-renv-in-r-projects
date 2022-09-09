@@ -1,1 +1,20 @@
 
+# package page https://rstudio.github.io/renv/articles/renv.html
+
+# install.packages("renv")
+
+# set renv in your project
+# renv::init()
+
+# to save the state of the project library to the lockfile 
+# call again to save the state of your project library if your attempts to 
+# update R packages were successful
+
+renv::snapshot()
+
+
+# revert to the previous state as encoded in the lockfile if your attempts to 
+# update packages introduced some new problems.
+
+# renv::restore()
+
